@@ -31845,7 +31845,7 @@ try {
   if (event) {
       params.event = event
   }
-  octokit.actions
+  octokit.rest.actions
     .listWorkflowRuns(params)
     .then((res) => {
       const lastSuccessCommitHash =
